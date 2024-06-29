@@ -75,12 +75,18 @@ function mulai() {
 function pukul() {
   const slash = document.querySelector(".slash");
   const slash1 = document.querySelector(".slash1");
-  slash.play();
-  slash1.play();
-  this.classList.add("qiqib");
-  skor += 1000;
-  this.parentNode.classList.remove("muncul");
-  papanSkor.textContent = skor.toLocaleString("id-ID");
+  if (this.parentNode.classList.contains("muncul")) {
+    slash.pause();
+    slash.currentTime = 0;
+    slash1.pause();
+    slash1.currentTime = 0;
+    slash.play();
+    slash1.play();
+    this.classList.add("qiqib");
+    skor += 1000;
+    this.parentNode.classList.remove("muncul");
+    papanSkor.textContent = skor.toLocaleString("id-ID");
+  }
 }
 
 qiqi.forEach((q) => {
