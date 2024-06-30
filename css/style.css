@@ -1,6 +1,7 @@
 body {
 background: url(../img/bg.jpg) no-repeat;
 background-size: cover;
+background-position-y: bottom;
 }
 
 h1,
