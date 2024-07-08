@@ -85,8 +85,10 @@ h2 {
 /* Mobile */
 @media(max-width: 750px) {
 body {
-    height: 150vh;       
+    background-image: url(../img/bgm.jpg);
+    height: 100vh;       
     user-select: none;
+    background-position: center;
 }
 
 h1,
