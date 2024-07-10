@@ -6,7 +6,7 @@ background-position-y: bottom;
 
 h1,
 h2 {
-    margin: 10px;
+    margin: 1rem;
     font-family: arial;
     font-size: 60px;
     text-align: center;
@@ -19,7 +19,7 @@ h2 {
     padding: 10px 20px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 1rem auto;
     transition: .3s;
     font-weight: bold;
 }
@@ -31,8 +31,11 @@ h2 {
 
 .container {
     width: 600px;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     cursor: url(../img/cursor/cs1.png), auto;
+    padding-bottom: 10px;
 }
 
 .container:active {
